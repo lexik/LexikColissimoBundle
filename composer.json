@@ -1,0 +1,26 @@
+{
+    "name": "lexik/colissimo-bundle",
+    "type": "symfony-bundle",
+    "description": "This bundle provides a wrapper for the lexik/ws-colissimo library",
+    "keywords": ["Symfony2", "bundle", "colissimo"],
+    "homepage": "https://github.com/lexikteam/LexikColissimoBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nicolas Cabot",
+            "email": "n.cabot@lexik.fr"
+        },
+        {
+            "name": "Dev Lexik",
+            "email": "dev@lexik.fr"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "lexik/ws-colissimo": "dev-master"
+    },
+    "autoload":     {
+        "psr-0": { "Lexik\\Bundle\\ColissimoBundle": "" }
+    },
+    "target-dir": "Lexik/Bundle/ColissimoBundle"
+}

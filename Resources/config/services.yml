@@ -1,0 +1,20 @@
+parameters:
+    lexik_colissimo.ws_coliposte_letter_service.service.class: Lexik\Bundle\ColissimoBundle\Service\WSColiPosteLetterService
+    lexik_colissimo.ws_coliposte_letter_service.client.class: WSColissimo\WSColiPosteLetterService\Client
+    lexik_colissimo.ws_coliposte_letter_service.client_builder.class: WSColissimo\WSColiPosteLetterService\ClientBuilder
+
+services:
+    lexik_colissimo.ws_coliposte_letter_service.service:
+        class: "%lexik_colissimo.ws_coliposte_letter_service.service.class%"
+        arguments:
+            - "@lexik_colissimo.ws_coliposte_letter_service.client"
+            - "@validator"
+            - "%lexik_colissimo.ws_coliposte_letter_service%"
+
+    lexik_colissimo.ws_coliposte_letter_service.client:
+        class: "%lexik_colissimo.ws_coliposte_letter_service.client.class%"
+        factory_service:  "lexik_colissimo.ws_coliposte_letter_service.client_builder"
+        factory_method: build
+
+    lexik_colissimo.ws_coliposte_letter_service.client_builder:
+        class: "%lexik_colissimo.ws_coliposte_letter_service.client_builder.class%"
