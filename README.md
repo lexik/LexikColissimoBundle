@@ -89,8 +89,7 @@ try {
 	// you can disable validation by setting the 4th argument to false
     );
     
-    // example dump of a $response
-
+    // $response looks like this
     object(WSColissimo\WSColiPosteLetterService\Response\ValueObject\ReturnLetter)[1102]
       protected 'file' => null
       protected 'parcelNumber' => string '13xc1v654d123' (length=13)
