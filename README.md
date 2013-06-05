@@ -89,11 +89,20 @@ try {
 	// you can disable validation by setting the 4th argument to false
     );
     
-    // do something with the response
+    // example dump of a $response
+
+    object(WSColissimo\WSColiPosteLetterService\Response\ValueObject\ReturnLetter)[1102]
+      protected 'file' => null
+      protected 'parcelNumber' => string '13xc1v654d123' (length=13)
+      protected 'PdfUrl' => string 'https://ws.colissimo.fr/path/to/pdf-file' (length=40)
+      protected 'errorID' => int 0
+      protected 'error' => string '' (length=0)
+      protected 'signature' => null
+      protected 'dateCreation' => null
 
 } catch (InvalidRequestException $e) {
-    // validation problems : you can iterate over them with $e->getViolations()
+    // validation problems : you can iterate over errors with $e->getViolations()
 } catch (FailedRequestException $e) {
-    // webservice responded with an error : you can the error message with $e->getMessage()
+    // webservice returned an error : you can get the error message with $e->getMessage()
 }
 ```
