@@ -27,6 +27,7 @@ class Configuration implements ConfigurationInterface
         $rootNode
             ->children()
                 ->arrayNode('ws_coliposte_letter_service')
+                    ->isRequired()
                     ->children()
                         ->scalarNode('contract_number')->isRequired(true)->cannotBeEmpty()->end()
                         ->scalarNode('password')->isRequired(true)->cannotBeEmpty()->end()
