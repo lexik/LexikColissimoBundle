@@ -4,6 +4,8 @@ LexikColissimoBundle
 This bundle provides services to access and consume the WSColiPosteLetterService 
 using the Lexik [WSColissimo](https://github.com/lexik/ws-colissimo) library.
 
+![Project Status](http://stillmaintained.com/lexik/LexikColissimoBundle.png)
+
 # WSColiPosteLetterService
 
 Use the WSColiPosteLetterService to generate shipping labels for Colissimo Parcels.
