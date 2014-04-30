@@ -6,6 +6,8 @@ using the Lexik [WSColissimo](https://github.com/lexik/ws-colissimo) library.
 
 ![Project Status](http://stillmaintained.com/lexik/LexikColissimoBundle.png)
 
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/1249be2c-432e-452a-98ab-212b021af522/big.png)](https://insight.sensiolabs.com/projects/1249be2c-432e-452a-98ab-212b021af522)
+
 # WSColiPosteLetterService
 
 Use the WSColiPosteLetterService to generate shipping labels for Colissimo Parcels.
